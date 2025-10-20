@@ -4,6 +4,8 @@
   "description": "Constants and utilities to work with JavaScript standard global objects and primitives.",
   "main": "index.js",
   "scripts": {
+    "tsc:compile": "tsc",
+    "tsc:config": "tsc --showConfig",
     "test": "vitest"
   },
   "repository": {
