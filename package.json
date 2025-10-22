@@ -1,6 +1,6 @@
 {
   "name": "core",
-  "version": "0.1.0-alpha",
+  "version": "0.2.0-alpha",
   "description": "Constants and utilities to work with JavaScript standard global objects and primitives.",
   "main": "index.js",
   "scripts": {
