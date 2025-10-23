@@ -109,8 +109,11 @@ export const fibonacci = (length: number): null | number[] => {
   if (Number.isFinite(length) && length >= 0) {
     const sequence = [0, 1];
 
-    for (let index = 2; index <= length; index++) {
+    let index = 2;
+
+    while (index <= length) {
       sequence[index] = sequence[index - 1] + sequence[index - 2];
+      index++;
     }
 
     return sequence;
