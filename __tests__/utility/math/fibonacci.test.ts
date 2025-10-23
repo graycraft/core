@@ -26,31 +26,31 @@ describe('`fibonacci`', () => {
   test('Expect result of `fibonacci(1)` to strict equal `[0, 1]`.', () => {
     expect(math.fibonacci(1)).toStrictEqual([0, 1]);
   });
-  test('Expect result of `fibonacci(2)` to strict equal `[0, 1]`.', () => {
-    expect(math.fibonacci(2)).toStrictEqual([0, 1]);
+  test('Expect result of `fibonacci(2)` to strict equal `[0, 1, 1]`.', () => {
+    expect(math.fibonacci(2)).toStrictEqual([0, 1, 1]);
   });
-  test('Expect result of `fibonacci(3)` to strict equal `[0, 1, 1]`.', () => {
-    expect(math.fibonacci(3)).toStrictEqual([0, 1, 1]);
+  test('Expect result of `fibonacci(3)` to strict equal `[0, 1, 1, 2]`.', () => {
+    expect(math.fibonacci(3)).toStrictEqual([0, 1, 1, 2]);
   });
-  test('Expect result of `fibonacci(4)` to strict equal `[0, 1, 1, 2]`.', () => {
-    expect(math.fibonacci(4)).toStrictEqual([0, 1, 1, 2]);
+  test('Expect result of `fibonacci(4)` to strict equal `[0, 1, 1, 2, 3]`.', () => {
+    expect(math.fibonacci(4)).toStrictEqual([0, 1, 1, 2, 3]);
   });
-  test('Expect result of `fibonacci(5)` to strict equal `[0, 1, 1, 2, 3]`.', () => {
-    expect(math.fibonacci(5)).toStrictEqual([0, 1, 1, 2, 3]);
+  test('Expect result of `fibonacci(5)` to strict equal `[0, 1, 1, 2, 3, 5]`.', () => {
+    expect(math.fibonacci(5)).toStrictEqual([0, 1, 1, 2, 3, 5]);
   });
-  test('Expect result of `fibonacci(6)` to strict equal `[0, 1, 1, 2, 3, 5]`.', () => {
-    expect(math.fibonacci(6)).toStrictEqual([0, 1, 1, 2, 3, 5]);
+  test('Expect result of `fibonacci(6)` to strict equal `[0, 1, 1, 2, 3, 5, 8]`.', () => {
+    expect(math.fibonacci(6)).toStrictEqual([0, 1, 1, 2, 3, 5, 8]);
   });
-  test('Expect result of `fibonacci(7)` to strict equal `[0, 1, 1, 2, 3, 5, 8]`.', () => {
-    expect(math.fibonacci(7)).toStrictEqual([0, 1, 1, 2, 3, 5, 8]);
+  test('Expect result of `fibonacci(7)` to strict equal `[0, 1, 1, 2, 3, 5, 8, 13]`.', () => {
+    expect(math.fibonacci(7)).toStrictEqual([0, 1, 1, 2, 3, 5, 8, 13]);
   });
-  test('Expect result of `fibonacci(8)` to strict equal `[0, 1, 1, 2, 3, 5, 8, 13]`.', () => {
-    expect(math.fibonacci(8)).toStrictEqual([0, 1, 1, 2, 3, 5, 8, 13]);
+  test('Expect result of `fibonacci(8)` to strict equal `[0, 1, 1, 2, 3, 5, 8, 13, 21]`.', () => {
+    expect(math.fibonacci(8)).toStrictEqual([0, 1, 1, 2, 3, 5, 8, 13, 21]);
   });
-  test('Expect result of `fibonacci(9)` to strict equal `[0, 1, 1, 2, 3, 5, 8, 13, 21]`.', () => {
-    expect(math.fibonacci(9)).toStrictEqual([0, 1, 1, 2, 3, 5, 8, 13, 21]);
+  test('Expect result of `fibonacci(9)` to strict equal `[0, 1, 1, 2, 3, 5, 8, 13, 34, 21]`.', () => {
+    expect(math.fibonacci(9)).toStrictEqual([0, 1, 1, 2, 3, 5, 8, 13, 21, 34]);
   });
-  test('Expect result of `fibonacci(10)` to strict equal `[0, 1, 1, 2, 3, 5, 8, 13, 21, 34]`.', () => {
-    expect(math.fibonacci(10)).toStrictEqual([0, 1, 1, 2, 3, 5, 8, 13, 21, 34]);
+  test('Expect result of `fibonacci(10)` to strict equal `[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]`.', () => {
+    expect(math.fibonacci(10)).toStrictEqual([0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]);
   });
 });
