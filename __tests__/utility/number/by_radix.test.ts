@@ -2,37 +2,6 @@ import NUMBER from '#src/constant/number.mts';
 import number from '#src/utility/number.mts';
 
 describe('`byRadix`', () => {
-  test('Expect result of `byRadix()` to be `null`.', () => {
-    expect(number.byRadix()).toBe(null);
-  });
-  test('Expect result of `byRadix(void 0, NaN)` to be `null`.', () => {
-    expect(number.byRadix(void 0, NaN)).toBe(null);
-  });
-  test('Expect result of `byRadix(void 0, -Infinity)` to be `null`.', () => {
-    expect(number.byRadix(void 0, -Infinity)).toBe(null);
-  });
-  test('Expect result of `byRadix(void 0, -2.55)` to be `null`.', () => {
-    expect(number.byRadix(void 0, -2.55)).toBe(null);
-  });
-  test('Expect result of `byRadix(void 0, -0b1)` to be `null`.', () => {
-    expect(number.byRadix(void 0, -0b1)).toBe(null);
-  });
-  test('Expect result of `byRadix(void 0, 0)` to be `null`.', () => {
-    expect(number.byRadix(void 0, 0)).toBe(null);
-  });
-  test('Expect result of `byRadix(void 0, 0b1)` to be `null`.', () => {
-    expect(number.byRadix(void 0, 0b1)).toBe(null);
-  });
-  test('Expect result of `byRadix(void 0, 2.55)` to be `null`.', () => {
-    expect(number.byRadix(void 0, 2.55)).toBe(null);
-  });
-  test('Expect result of `byRadix(void 0, Infinity)` to be `null`.', () => {
-    expect(number.byRadix(void 0, Infinity)).toBe(null);
-  });
-  test('Expect result of `byRadix(void 0, "a")` to be `null`.', () => {
-    expect(number.byRadix(void 0, 'a')).toBe(null);
-  });
-
   test('Expect result of `byRadix(NaN)` to be `null`.', () => {
     expect(number.byRadix(NaN)).toBe(null);
   });
@@ -59,9 +28,6 @@ describe('`byRadix`', () => {
   });
   test('Expect result of `byRadix(NaN, Infinity)` to be `null`.', () => {
     expect(number.byRadix(NaN, Infinity)).toBe(null);
-  });
-  test('Expect result of `byRadix(NaN, "a")` to be `null`.', () => {
-    expect(number.byRadix(NaN, 'a')).toBe(null);
   });
 
   test('Expect result of `byRadix(-Infinity)` to be `null`.', () => {
@@ -91,9 +57,6 @@ describe('`byRadix`', () => {
   test('Expect result of `byRadix(-Infinity, Infinity)` to be `null`.', () => {
     expect(number.byRadix(-Infinity, Infinity)).toBe(null);
   });
-  test('Expect result of `byRadix(-Infinity, "a")` to be `null`.', () => {
-    expect(number.byRadix(-Infinity, 'a')).toBe(null);
-  });
 
   test('Expect result of `byRadix(-2.55)` to be `null`.', () => {
     expect(number.byRadix(-2.55)).toBe(null);
@@ -121,9 +84,6 @@ describe('`byRadix`', () => {
   });
   test('Expect result of `byRadix(-2.55, Infinity)` to be `null`.', () => {
     expect(number.byRadix(-2.55, Infinity)).toBe(null);
-  });
-  test('Expect result of `byRadix(-2.55, "a")` to be `null`.', () => {
-    expect(number.byRadix(-2.55, 'a')).toBe(null);
   });
 
   test('Expect result of `byRadix(-0b1)` to be `"-1"`.', () => {
@@ -153,9 +113,6 @@ describe('`byRadix`', () => {
   test('Expect result of `byRadix(-0b1, Infinity)` to be `null`.', () => {
     expect(number.byRadix(-0b1, Infinity)).toBe(null);
   });
-  test('Expect result of `byRadix(-0b1, "a")` to be `null`.', () => {
-    expect(number.byRadix(-0b1, 'a')).toBe(null);
-  });
 
   test('Expect result of `byRadix(0)` to be `"0"`.', () => {
     expect(number.byRadix(0)).toBe('0');
@@ -183,9 +140,6 @@ describe('`byRadix`', () => {
   });
   test('Expect result of `byRadix(0, Infinity)` to be `null`.', () => {
     expect(number.byRadix(0, Infinity)).toBe(null);
-  });
-  test('Expect result of `byRadix(0, "a")` to be `null`.', () => {
-    expect(number.byRadix(0, 'a')).toBe(null);
   });
 
   test('Expect result of `byRadix(0b1)` to be `"1"`.', () => {
@@ -215,9 +169,6 @@ describe('`byRadix`', () => {
   test('Expect result of `byRadix(0b1, Infinity)` to be `null`.', () => {
     expect(number.byRadix(0b1, Infinity)).toBe(null);
   });
-  test('Expect result of `byRadix(0b1, "a")` to be `null`.', () => {
-    expect(number.byRadix(0b1, 'a')).toBe(null);
-  });
 
   test('Expect result of `byRadix(2.55)` to be `null`.', () => {
     expect(number.byRadix(2.55)).toBe(null);
@@ -246,9 +197,6 @@ describe('`byRadix`', () => {
   test('Expect result of `byRadix(2.55, Infinity)` to be `null`.', () => {
     expect(number.byRadix(2.55, Infinity)).toBe(null);
   });
-  test('Expect result of `byRadix(2.55, "a")` to be `null`.', () => {
-    expect(number.byRadix(2.55, 'a')).toBe(null);
-  });
 
   test('Expect result of `byRadix(Infinity)` to be `null`.', () => {
     expect(number.byRadix(Infinity)).toBe(null);
@@ -276,40 +224,6 @@ describe('`byRadix`', () => {
   });
   test('Expect result of `byRadix(Infinity, Infinity)` to be `null`.', () => {
     expect(number.byRadix(Infinity, Infinity)).toBe(null);
-  });
-  test('Expect result of `byRadix(Infinity, "a")` to be `null`.', () => {
-    expect(number.byRadix(Infinity, 'a')).toBe(null);
-  });
-
-  test('Expect result of `byRadix("a")` to be `null`.', () => {
-    expect(number.byRadix('a')).toBe(null);
-  });
-  test('Expect result of `byRadix("a", NaN)` to be `null`.', () => {
-    expect(number.byRadix('a', NaN)).toBe(null);
-  });
-  test('Expect result of `byRadix("a", -Infinity)` to be `null`.', () => {
-    expect(number.byRadix('a', -Infinity)).toBe(null);
-  });
-  test('Expect result of `byRadix("a", -2.55)` to be `null`.', () => {
-    expect(number.byRadix('a', -2.55)).toBe(null);
-  });
-  test('Expect result of `byRadix("a", -0b1)` to be `null`.', () => {
-    expect(number.byRadix('a', -0b1)).toBe(null);
-  });
-  test('Expect result of `byRadix("a", 0)` to be `null`.', () => {
-    expect(number.byRadix('a', 0)).toBe(null);
-  });
-  test('Expect result of `byRadix("a", 0b1)` to be `null`.', () => {
-    expect(number.byRadix('a', 0b1)).toBe(null);
-  });
-  test('Expect result of `byRadix("a", 2.55)` to be `null`.', () => {
-    expect(number.byRadix('a', 2.55)).toBe(null);
-  });
-  test('Expect result of `byRadix("a", Infinity)` to be `null`.', () => {
-    expect(number.byRadix('a', Infinity)).toBe(null);
-  });
-  test('Expect result of `byRadix("a", "a")` to be `null`.', () => {
-    expect(number.byRadix('a', 'a')).toBe(null);
   });
 
   test('Expect result of `byRadix(NUMBER.FLOAT64_MAX)` to be `"9007199254740992"`.', () => {

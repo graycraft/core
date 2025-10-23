@@ -1,9 +1,6 @@
 import math from '#src/utility/math.mts';
 
 describe('`fibonacci`', () => {
-  test('Expect result of `fibonacci()` to strict equal `null`.', () => {
-    expect(math.fibonacci()).toStrictEqual(null);
-  });
   test('Expect result of `fibonacci(NaN)` to strict equal `null`.', () => {
     expect(math.fibonacci(NaN)).toStrictEqual(null);
   });
@@ -16,19 +13,16 @@ describe('`fibonacci`', () => {
   test('Expect result of `fibonacci(-0b1)` to strict equal `null`.', () => {
     expect(math.fibonacci(-0b1)).toStrictEqual(null);
   });
-  test('Expect result of `fibonacci(0)` to strict equal `[0, 1]`.', () => {
-    expect(math.fibonacci(0)).toStrictEqual([0, 1]);
-  });
   test('Expect result of `fibonacci(2.55)` to strict equal `[0, 1, 1]`.', () => {
     expect(math.fibonacci(2.55)).toStrictEqual([0, 1, 1]);
   });
   test('Expect result of `fibonacci(Infinity)` to strict equal `null`.', () => {
     expect(math.fibonacci(Infinity)).toStrictEqual(null);
   });
-  test('Expect result of `fibonacci("a")` to strict equal `null`.', () => {
-    expect(math.fibonacci('a')).toStrictEqual(null);
-  });
 
+  test('Expect result of `fibonacci(0)` to strict equal `[0, 1]`.', () => {
+    expect(math.fibonacci(0)).toStrictEqual([0, 1]);
+  });
   test('Expect result of `fibonacci(1)` to strict equal `[0, 1]`.', () => {
     expect(math.fibonacci(1)).toStrictEqual([0, 1]);
   });

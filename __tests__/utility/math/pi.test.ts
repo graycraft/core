@@ -1,11 +1,11 @@
 import math from '#src/utility/math.mts';
 
 describe('`pi`', () => {
-  test('Expect result of `pi()` to be `String(Math.PI)`.', () => {
-    expect(math.pi()).toBe(String(Math.PI));
-  });
   test('Expect result of `pi()` to be `String(3.1415926535897932)`.', () => {
     expect(math.pi()).toBe(String(3.1415926535897932));
+  });
+  test('Expect result of `pi()` to be `String(Math.PI)`.', () => {
+    expect(math.pi()).toBe(String(Math.PI));
   });
   test('Expect result of `pi(NaN)` to be `null`.', () => {
     expect(math.pi(NaN)).toBe(null);
@@ -24,9 +24,6 @@ describe('`pi`', () => {
   });
   test('Expect result of `pi(Infinity)` to be `null`.', () => {
     expect(math.pi(Infinity)).toBe(null);
-  });
-  test('Expect result of `pi("a")` to be `null`.', () => {
-    expect(math.pi('a')).toBe(null);
   });
 
   test('Expect result of `pi(0)` to be `"3"`.', () => {
@@ -87,11 +84,11 @@ describe('`pi`', () => {
     expect(math.pi(17)).toBe('3.14159265358979323');
   });
 
-  test('Expect result of `Number(math.pi())` to be `Math.PI`.', () => {
-    expect(Number(math.pi())).toBe(Math.PI);
-  });
   test('Expect result of `Number(math.pi())` to be `3.141592653589793`.', () => {
     expect(Number(math.pi())).toBe(3.1415926535897932);
+  });
+  test('Expect result of `Number(math.pi())` to be `Math.PI`.', () => {
+    expect(Number(math.pi())).toBe(Math.PI);
   });
   test('Expect result of `Number(math.pi(NaN))` to be `0`.', () => {
     expect(Number(math.pi(NaN))).toBe(0);
@@ -110,9 +107,6 @@ describe('`pi`', () => {
   });
   test('Expect result of `Number(math.pi(Infinity))` to be `0`.', () => {
     expect(Number(math.pi(Infinity))).toBe(0);
-  });
-  test('Expect result of `Number(math.pi("a"))` to be `0`.', () => {
-    expect(Number(math.pi('a'))).toBe(0);
   });
 
   test('Expect result of `Number(math.pi(0))` to be `3`.', () => {

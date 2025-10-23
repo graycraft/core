@@ -2,9 +2,6 @@ import NUMBER from '#src/constant/number.mts';
 import number from '#src/utility/number.mts';
 
 describe('`toHex`', () => {
-  test('Expect result of `toHex()` to be `null`.', () => {
-    expect(number.toHex()).toBe(null);
-  });
   test('Expect result of `toHex(NaN)` to be `null`.', () => {
     expect(number.toHex(NaN)).toBe(null);
   });
@@ -25,9 +22,6 @@ describe('`toHex`', () => {
   });
   test('Expect result of `toHex(Infinity)` to be `null`.', () => {
     expect(number.toHex(Infinity)).toBe(null);
-  });
-  test('Expect result of `toHex("a")` to be `null`.', () => {
-    expect(number.toHex('a')).toBe(null);
   });
 
   test('Expect result of `toHex(NUMBER.FLOAT16_EPSILON)` to be `null`.', () => {

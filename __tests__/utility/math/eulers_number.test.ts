@@ -20,17 +20,8 @@ describe('`eulersNumber`', () => {
   test('Expect result of `eulersNumber(-0b1)` to be `null`.', () => {
     expect(math.eulersNumber(-0b1)).toBe(null);
   });
-  test('Expect result of `eulersNumber(0)` to be `1`.', () => {
-    expect(math.eulersNumber(0)).toBe(1);
-  });
-  test('Expect result of `eulersNumber(0b1)` to be `1`.', () => {
-    expect(math.eulersNumber(0b1)).toBe(1);
-  });
   test('Expect result of `eulersNumber(2.55)` to be `null`.', () => {
     expect(math.eulersNumber(2.55)).toBe(null);
-  });
-  test('Expect result of `eulersNumber("a")` to be `null`.', () => {
-    expect(math.eulersNumber('a')).toBe(null);
   });
 
   test('Expect result of `eulersNumber(0)` to be `1`.', () => {

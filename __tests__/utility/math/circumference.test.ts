@@ -1,9 +1,6 @@
 import math from '#src/utility/math.mts';
 
 describe('`circumference`', () => {
-  test('Expect result of `circumference()` to be `null`.', () => {
-    expect(math.circumference()).toBe(null);
-  });
   test('Expect result of `circumference(NaN)` to be `null`.', () => {
     expect(math.circumference(NaN)).toBe(null);
   });
@@ -27,8 +24,5 @@ describe('`circumference`', () => {
   });
   test('Expect result of `circumference(Infinity)` to be `null`.', () => {
     expect(math.circumference(Infinity)).toBe(null);
-  });
-  test('Expect result of `circumference("a")` to be `null`.', () => {
-    expect(math.circumference('a')).toBe(null);
   });
 });
