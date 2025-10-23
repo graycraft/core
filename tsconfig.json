@@ -4,10 +4,11 @@
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
     "checkJs": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "module": "NodeNext",
     "moduleDetection": "force",
@@ -18,6 +19,7 @@
     "paths": {
       "#src/*": ["./source/*"]
     },
+    "preserveConstEnums": true,
     "outDir": "./distribution",
     "resolveJsonModule": true,
     "resolvePackageJsonExports": true,
@@ -30,12 +32,12 @@
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
     "target": "ESNext",
-    "types": ["vitest/globals"],
-    "typeRoots": ["node_modules", "node_modules/@types"],
+    "types": ["globals"],
+    "typeRoots": ["./node_modules/vitest"],
     "useDefineForClassFields": true,
     "useUnknownInCatchVariables": true,
     "verbatimModuleSyntax": true
   },
-  "exclude": ["__tests__", ".vscode", "node_modules"],
+  "exclude": [".vscode", "node_modules"],
   "include": ["**/*"]
 }
