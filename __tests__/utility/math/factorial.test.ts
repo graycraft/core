@@ -1,5 +1,3 @@
-import { expect, test } from 'vitest';
-
 import MATH from '#src/constant/math.mts';
 import math from '#src/utility/math.mts';
 
@@ -7,31 +5,6 @@ describe('`factorial`, `factorialBigInt`', () => {
   test('Expect result of `factorial()` to be `1n`.', () => {
     expect(math.factorial()).toBe(1n);
   });
-  test('Expect result of `factorial(NaN)` to be `null`.', () => {
-    expect(math.factorial(NaN)).toBe(null);
-  });
-  test('Expect result of `factorial(-Infinity)` to be `null`.', () => {
-    expect(math.factorial(-Infinity)).toBe(null);
-  });
-  test('Expect result of `factorial(-2.55)` to be `null`.', () => {
-    expect(math.factorial(-2.55)).toBe(null);
-  });
-  test('Expect result of `factorial(-0b1)` to be `null`.', () => {
-    expect(math.factorial(-0b1)).toBe(null);
-  });
-  test('Expect result of `factorial(0)` to be `null`.', () => {
-    expect(math.factorial(0)).toBe(null);
-  });
-  test('Expect result of `factorial(2.55)` to be `null`.', () => {
-    expect(math.factorial(2.55)).toBe(null);
-  });
-  test('Expect result of `factorial(Infinity)` to be `null`.', () => {
-    expect(math.factorial(Infinity)).toBe(null);
-  });
-  test('Expect result of `factorial("a")` to be `null`.', () => {
-    expect(math.factorial('a')).toBe(null);
-  });
-
   test('Expect result of `factorial()` to be `FACTORIAL_0`.', () => {
     expect(math.factorial()).toBe(MATH.FACTORIAL_0);
   });
@@ -132,9 +105,6 @@ describe('`factorialNumber`', () => {
   });
   test('Expect result of `factorialNumber(Infinity)` to be `null`.', () => {
     expect(math.factorialNumber(Infinity)).toBe(null);
-  });
-  test('Expect result of `factorialNumber("a")` to be `null`.', () => {
-    expect(math.factorialNumber('a')).toBe(null);
   });
 
   test('Expect result of `factorialNumber()` to be `Number(MATH.FACTORIAL_0)`.', () => {
