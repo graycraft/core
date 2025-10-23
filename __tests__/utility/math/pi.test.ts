@@ -1,5 +1,3 @@
-import { expect, test } from 'vitest';
-
 import math from '#src/utility/math.mts';
 
 describe('`pi`', () => {

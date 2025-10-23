@@ -1,5 +1,3 @@
-import { expect, test } from 'vitest';
-
 import MATH from '#src/constant/math.mts';
 import math from '#src/utility/math.mts';
 

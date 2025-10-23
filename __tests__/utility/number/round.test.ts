@@ -1,5 +1,3 @@
-import { expect, test } from 'vitest';
-
 import number from '#src/utility/number.mts';
 
 describe('`round`', () => {
