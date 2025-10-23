@@ -10,3 +10,7 @@ Constants and utilities to work with JavaScript standard global objects and prim
 - `Number`
 - `RegExp`
 - `String`
+
+Currently under development, only `Math` and `Number` implemented.
+
+Subscribe and stay tuned for updates.
