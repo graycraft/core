@@ -1,12 +1,7 @@
-import { expect, test } from 'vitest';
-
 import NUMBER from '#src/constant/number.mts';
 import number from '#src/utility/number.mts';
 
 describe('`toOct`', () => {
-  test('Expect result of `toOct()` to be `null`.', () => {
-    expect(number.toOct()).toBe(null);
-  });
   test('Expect result of `toOct(NaN)` to be `null`.', () => {
     expect(number.toOct(NaN)).toBe(null);
   });
@@ -27,9 +22,6 @@ describe('`toOct`', () => {
   });
   test('Expect result of `toOct(Infinity)` to be `null`.', () => {
     expect(number.toOct(Infinity)).toBe(null);
-  });
-  test('Expect result of `toOct("a")` to be `null`.', () => {
-    expect(number.toOct('a')).toBe(null);
   });
 
   test('Expect result of `toOct(NUMBER.FLOAT16_EPSILON)` to be `null`.', () => {

@@ -1,5 +1,3 @@
-import { expect, test } from 'vitest';
-
 import NUMBER from '#src/constant/number.mts';
 
 describe('`FLOAT16`', () => {

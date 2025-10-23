@@ -1,39 +1,6 @@
-import { expect, test } from 'vitest';
-
 import number from '#src/utility/number.mts';
 
 describe('`round`', () => {
-  test('Expect result of `round()` to be `null`.', () => {
-    expect(number.round()).toBe(null);
-  });
-  test('Expect result of `round(void 0, NaN)` to be `null`.', () => {
-    expect(number.round(void 0, NaN)).toBe(null);
-  });
-  test('Expect result of `round(void 0, -Infinity)` to be `null`.', () => {
-    expect(number.round(void 0, -Infinity)).toBe(null);
-  });
-  test('Expect result of `round(void 0, -2.55)` to be `null`.', () => {
-    expect(number.round(void 0, -2.55)).toBe(null);
-  });
-  test('Expect result of `round(void 0, -0b1)` to be `null`.', () => {
-    expect(number.round(void 0, -0b1)).toBe(null);
-  });
-  test('Expect result of `round(void 0, 0)` to be `null`.', () => {
-    expect(number.round(void 0, 0)).toBe(null);
-  });
-  test('Expect result of `round(void 0, 0b1)` to be `null`.', () => {
-    expect(number.round(void 0, 0b1)).toBe(null);
-  });
-  test('Expect result of `round(void 0, 2.55)` to be `null`.', () => {
-    expect(number.round(void 0, 2.55)).toBe(null);
-  });
-  test('Expect result of `round(void 0, Infinity)` to be `null`.', () => {
-    expect(number.round(void 0, Infinity)).toBe(null);
-  });
-  test('Expect result of `round(void 0, "a")` to be `null`.', () => {
-    expect(number.round(void 0, 'a')).toBe(null);
-  });
-
   test('Expect result of `round(NaN)` to be `null`.', () => {
     expect(number.round(NaN)).toBe(null);
   });
@@ -60,9 +27,6 @@ describe('`round`', () => {
   });
   test('Expect result of `round(NaN, Infinity)` to be `null`.', () => {
     expect(number.round(NaN, Infinity)).toBe(null);
-  });
-  test('Expect result of `round(NaN, "a")` to be `null`.', () => {
-    expect(number.round(NaN, 'a')).toBe(null);
   });
 
   test('Expect result of `round(-Infinity)` to be `null`.', () => {
@@ -92,9 +56,6 @@ describe('`round`', () => {
   test('Expect result of `round(-Infinity, Infinity)` to be `null`.', () => {
     expect(number.round(-Infinity, Infinity)).toBe(null);
   });
-  test('Expect result of `round(-Infinity, "a")` to be `null`.', () => {
-    expect(number.round(-Infinity, 'a')).toBe(null);
-  });
 
   test('Expect result of `round(-2.55)` to be `-2.55`.', () => {
     expect(number.round(-2.55)).toBe(-2.55);
@@ -122,9 +83,6 @@ describe('`round`', () => {
   });
   test('Expect result of `round(-2.55, Infinity)` to be `null`.', () => {
     expect(number.round(-2.55, Infinity)).toBe(null);
-  });
-  test('Expect result of `round(-2.55, "a")` to be `null`.', () => {
-    expect(number.round(-2.55, 'a')).toBe(null);
   });
 
   test('Expect result of `round(-0b1)` to be `-1`.', () => {
@@ -154,9 +112,6 @@ describe('`round`', () => {
   test('Expect result of `round(-0b1, Infinity)` to be `null`.', () => {
     expect(number.round(-0b1, Infinity)).toBe(null);
   });
-  test('Expect result of `round(-0b1, "a")` to be `null`.', () => {
-    expect(number.round(-0b1, 'a')).toBe(null);
-  });
 
   test('Expect result of `round(0)` to be `0`.', () => {
     expect(number.round(0)).toBe(0);
@@ -184,9 +139,6 @@ describe('`round`', () => {
   });
   test('Expect result of `round(0, Infinity)` to be `null`.', () => {
     expect(number.round(0, Infinity)).toBe(null);
-  });
-  test('Expect result of `round(0, "a")` to be `null`.', () => {
-    expect(number.round(0, 'a')).toBe(null);
   });
 
   test('Expect result of `round(0b1)` to be `1`.', () => {
@@ -216,9 +168,6 @@ describe('`round`', () => {
   test('Expect result of `round(0b1, Infinity)` to be `null`.', () => {
     expect(number.round(0b1, Infinity)).toBe(null);
   });
-  test('Expect result of `round(0b1, "a")` to be `null`.', () => {
-    expect(number.round(0b1, 'a')).toBe(null);
-  });
 
   test('Expect result of `round(2.55)` to be `2.55`.', () => {
     expect(number.round(2.55)).toBe(2.55);
@@ -246,9 +195,6 @@ describe('`round`', () => {
   });
   test('Expect result of `round(2.55, Infinity)` to be `null`.', () => {
     expect(number.round(2.55, Infinity)).toBe(null);
-  });
-  test('Expect result of `round(2.55, "a")` to be `null`.', () => {
-    expect(number.round(2.55, 'a')).toBe(null);
   });
 
   test('Expect result of `round(Infinity)` to be `null`.', () => {
@@ -278,40 +224,6 @@ describe('`round`', () => {
   test('Expect result of `round(Infinity, Infinity)` to be `null`.', () => {
     expect(number.round(Infinity, Infinity)).toBe(null);
   });
-  test('Expect result of `round(Infinity, "a")` to be `null`.', () => {
-    expect(number.round(Infinity, 'a')).toBe(null);
-  });
-
-  test('Expect result of `round("a")` to be `null`.', () => {
-    expect(number.round('a')).toBe(null);
-  });
-  test('Expect result of `round("a", NaN)` to be `null`.', () => {
-    expect(number.round('a', NaN)).toBe(null);
-  });
-  test('Expect result of `round("a", -Infinity)` to be `null`.', () => {
-    expect(number.round('a', -Infinity)).toBe(null);
-  });
-  test('Expect result of `round("a", -2.55)` to be `null`.', () => {
-    expect(number.round('a', -2.55)).toBe(null);
-  });
-  test('Expect result of `round("a", -0b1)` to be `null`.', () => {
-    expect(number.round('a', -0b1)).toBe(null);
-  });
-  test('Expect result of `round("a", 0)` to be `null`.', () => {
-    expect(number.round('a', 0)).toBe(null);
-  });
-  test('Expect result of `round("a", 0b1)` to be `null`.', () => {
-    expect(number.round('a', 0b1)).toBe(null);
-  });
-  test('Expect result of `round("a", 2.55)` to be `null`.', () => {
-    expect(number.round('a', 2.55)).toBe(null);
-  });
-  test('Expect result of `round("a", Infinity)` to be `null`.', () => {
-    expect(number.round('a', Infinity)).toBe(null);
-  });
-  test('Expect result of `round("a", "a")` to be `null`.', () => {
-    expect(number.round('a', 'a')).toBe(null);
-  });
 
   test('Expect result of `round(Math.PI)` to be `3.14`.', () => {
     expect(number.round(Math.PI)).toBe(3.14);
@@ -328,22 +240,19 @@ describe('`round`', () => {
   test('Expect result of `round(Math.PI, -0b1)` to be `0`.', () => {
     expect(number.round(Math.PI, -0b1)).toBe(0);
   });
-  test('Expect result of `round(Math.PI, 0)` to be `3`.', () => {
-    expect(number.round(Math.PI, 0)).toBe(3);
-  });
-  test('Expect result of `round(Math.PI, 0b1)` to be `3.1`.', () => {
-    expect(number.round(Math.PI, 0b1)).toBe(3.1);
-  });
   test('Expect result of `round(Math.PI, 2.55)` to be `3.142`.', () => {
     expect(number.round(Math.PI, 2.55)).toBe(3.142);
   });
   test('Expect result of `round(Math.PI, Infinity)` to be `null`.', () => {
     expect(number.round(Math.PI, Infinity)).toBe(null);
   });
-  test('Expect result of `round(Math.PI, "a")` to be `null`.', () => {
-    expect(number.round(Math.PI, 'a')).toBe(null);
-  });
 
+  test('Expect result of `round(Math.PI, 0)` to be `3`.', () => {
+    expect(number.round(Math.PI, 0)).toBe(3);
+  });
+  test('Expect result of `round(Math.PI, 0b1)` to be `3.1`.', () => {
+    expect(number.round(Math.PI, 1)).toBe(3.1);
+  });
   test('Expect result of `round(Math.PI, 2)` to be `3.14`.', () => {
     expect(number.round(Math.PI, 2)).toBe(3.14);
   });

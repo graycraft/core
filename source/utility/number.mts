@@ -24,8 +24,8 @@ export const divide = (dividend: number, divisor: number): null | number | strin
  * Represent a specified integer number value as a string by the radix base.
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toString
  * @param {number} value Integer number value to represent as a string by the radix base.
- * @param {[number=10]} radix Radix base, from 2 to 36.
- * @param {[string=""]} prefix Prefix to append.
+ * @param {number} [radix=10] Radix base, from 2 to 36.
+ * @param {string} [prefix=""] Prefix to append.
  * @returns {null | string} String representation by the radix base, if value and radix are integers, else `null`.
  */
 export const byRadix = (value: number, radix: number = 10, prefix = ''): null | string => {
@@ -66,7 +66,7 @@ export const isEven = (value: number): boolean | null => {
  * Round a specified number value by the radix base.
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round
  * @param {number} value Number to round by the radix base.
- * @param {[number=2]} precision Radix base.
+ * @param {number} [precision=2] Radix base.
  * @returns {null | number} Rounded number by the radix base, if result is finite, else `null`.
  */
 export const round = (value: number, precision: number = 2): null | number => {
@@ -80,7 +80,7 @@ export const round = (value: number, precision: number = 2): null | number => {
  * Represent a specified integer number value as a binary string.
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toString
  * @param {number} value Integer number to represent as a binary string.
- * @param {[string="0b"]} prefix Prefix to append.
+ * @param {string} [prefix="0b"] Prefix to append.
  * @returns {null | string} Binary representation, if a number value is integer, else `null`.
  */
 export const toBin = (value: number, prefix = '0b'): null | string => {
@@ -91,7 +91,7 @@ export const toBin = (value: number, prefix = '0b'): null | string => {
  * Represent a specified integer number value as a hexadecimal string.
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toString
  * @param {number} value Integer number to represent as a hexadecimal string.
- * @param {[string="0x"]} prefix Prefix to append.
+ * @param {string} [prefix="0x"] Prefix to append.
  * @returns {null | string} Hexadecimal representation, if a number value is integer, else `null`.
  */
 export const toHex = (value: number, prefix = '0x'): null | string => {
@@ -102,7 +102,7 @@ export const toHex = (value: number, prefix = '0x'): null | string => {
  * Represent a specified integer number value as an octal string.
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toString
  * @param {number} value Integer number to represent as an octal string.
- * @param {[string="0o"]} prefix Prefix to append.
+ * @param {string} [prefix="0o"] Prefix to append.
  * @returns {null | string} Octal representation, if a number value is integer, else `null`.
  */
 export const toOct = (value: number, prefix = '0o'): null | string => {

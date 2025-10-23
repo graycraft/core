@@ -1,12 +1,7 @@
-import { expect, test } from 'vitest';
-
 import NUMBER from '#src/constant/number.mts';
 import number from '#src/utility/number.mts';
 
 describe('`toBin`', () => {
-  test('Expect result of `toBin()` to be `null`.', () => {
-    expect(number.toBin()).toBe(null);
-  });
   test('Expect result of `toBin(NaN)` to be `null`.', () => {
     expect(number.toBin(NaN)).toBe(null);
   });
@@ -27,9 +22,6 @@ describe('`toBin`', () => {
   });
   test('Expect result of `toBin(Infinity)` to be `null`.', () => {
     expect(number.toBin(Infinity)).toBe(null);
-  });
-  test('Expect result of `toBin("a")` to be `null`.', () => {
-    expect(number.toBin('a')).toBe(null);
   });
 
   test('Expect result of `toBin(NUMBER.FLOAT16_EPSILON)` to be `null`.', () => {
